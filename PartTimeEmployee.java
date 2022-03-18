@@ -8,6 +8,12 @@ public class PartTimeEmployee {
     public void setWage(){
         
     }
+
+    public void getRatePerHour(){
+        ratePerHour = s.nextDouble();
+        return;
+        
+    }
     
 
     

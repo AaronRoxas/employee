@@ -7,6 +7,7 @@ public class RunEmployee
         Scanner s = new Scanner(System.in);
         Employee employee = new Employee(); 
         FullTimeEmployee fullTime = new FullTimeEmployee();
+        PartTimeEmployee partTime = new PartTimeEmployee();
 
 
         System.out.print("Please enter your full name: ");
@@ -23,7 +24,12 @@ public class RunEmployee
                 System.out.println("Hello " + employee.setName + " your monthly salary is: " + fullTime.monthlySalary);
 
             }
-            else if (choice.equalsIgnoreCase("p")){
+            else if (choice.equalsIgnoreCase("p")){ 
+                System.out.print("Rate per hour: ");
+                partTime.getRatePerHour();
+
+                System.out.print(partTime.ratePerHour);
+
 
             }
             else {
