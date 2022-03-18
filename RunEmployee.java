@@ -27,8 +27,12 @@ public class RunEmployee
             else if (choice.equalsIgnoreCase("p")){ 
                 System.out.print("Rate per hour: ");
                 partTime.getRatePerHour();
+                System.out.print("Hours worked this month: ");
+                partTime.getRatePerHour();
 
-                System.out.print(partTime.ratePerHour);
+                System.out.println("Name: "+employee.setName  + " Monthly Wage: " + partTime.getWage() + " Final Pay: " + partTime.finalPay);
+
+                
 
 
             }
