@@ -2,13 +2,19 @@ import java.util.Scanner;
 public class PartTimeEmployee {
     Scanner s = new Scanner(System.in);
     double ratePerHour;
-    int hoursWorked;
+    double hoursWorked;
     double wage;
     double finalPay;
 
     public void setWage(){
         wage = ratePerHour * hoursWorked;
+        System.out.println("Wage: "+wage);
         return;
+    }
+
+    public void finalPay(){
+        finalPay = wage * 0.95;
+        System.out.print("Final Pay: "+finalPay);
     }
 
     public double getWage(){
@@ -20,7 +26,7 @@ public class PartTimeEmployee {
         return;   
     }
     public void getHours(){
-        hoursWorked = s.nextInt();
+        hoursWorked = s.nextDouble();
         return;
     }
     

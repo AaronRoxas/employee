@@ -28,11 +28,11 @@ public class RunEmployee
                 System.out.print("Rate per hour: ");
                 partTime.getRatePerHour();
                 System.out.print("Hours worked this month: ");
-                partTime.getRatePerHour();
+                partTime.getHours();
 
-                System.out.println("Name: "+employee.setName  + " Monthly Wage: " + partTime.getWage() + " Final Pay: " + partTime.finalPay);
-
-                
+                System.out.println("Name: "+employee.setName  + " \nHours Worked: " + partTime.hoursWorked + " \nRate Per Hour: " + partTime.ratePerHour);
+                partTime.setWage();
+                partTime.finalPay();
 
 
             }
